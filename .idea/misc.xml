@@ -1,45 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="CompilerWorkspaceConfiguration">
-    <option name="AUTO_SHOW_ERRORS_IN_EDITOR" value="false" />
-    <option name="DISPLAY_NOTIFICATION_POPUP" value="false" />
-  </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
-  <component name="FormatOnSaveOptions">
-    <option name="myRunOnSave" value="true" />
-  </component>
   <component name="Kotlin2JsCompilerArguments">
     <option name="moduleKind" value="plain" />
-  </component>
-  <component name="Kotlin2JvmCompilerArguments">
-    <option name="jvmTarget" value="1.8" />
-  </component>
-  <component name="KotlinCommonCompilerArguments">
-    <option name="apiVersion" value="2.0" />
-    <option name="languageVersion" value="2.0" />
-  </component>
-  <component name="KotlinScriptingSettings">
-    <scriptDefinition className="org.jetbrains.kotlin.idea.gradleJava.scripting.ErrorGradleScriptDefinition.LegacyDefinition" definitionName="Default Kotlin Gradle Script">
-      <order>0</order>
-      <isEnabled>false</isEnabled>
-    </scriptDefinition>
-    <scriptDefinition className="org.jetbrains.kotlin.mainKts.MainKtsScript" definitionName="MainKtsScript">
-      <order>1</order>
-      <isEnabled>false</isEnabled>
-    </scriptDefinition>
-    <scriptDefinition className="kotlin.script.templates.standard.ScriptTemplateWithBindings" definitionName="Script definition for extension scripts and IDE console">
-      <order>2</order>
-      <isEnabled>false</isEnabled>
-    </scriptDefinition>
-    <scriptDefinition className="org.jetbrains.kotlin.idea.core.script.BundledIdeScriptDefinition" definitionName="Kotlin Script">
-      <order>3</order>
-    </scriptDefinition>
-  </component>
-  <component name="OptimizeOnSaveOptions">
-    <option name="myRunOnSave" value="true" />
-  </component>
-  <component name="ProjectDictionaryState">
-    <dictionary name="Hp" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -216,7 +179,12 @@
       </profile-state>
     </entry>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="false" transferred="false" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
   <component name="SvnConfiguration">
     <configuration>C:\Users\Hp\AppData\Roaming\Subversion</configuration>
   </component>

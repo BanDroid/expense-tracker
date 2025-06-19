@@ -45,7 +45,7 @@ class SecondFragment : Fragment() {
             findNavController().navigateUp()
         }
 
-        if (!expenseId.isNullOrEmpty()) {
+        if (!expenseId.isNullOrBlank()) {
             expense = vm.expenses.value?.find { it.id == expenseId }
             if (expense != null) {
                 binding.amount.editText!!.setText(
@@ -60,22 +60,26 @@ class SecondFragment : Fragment() {
         }
 
         binding.saveBtn.setOnClickListener {
-            if (expenseId.isNullOrEmpty() || expense == null) {
-                vm.addExpense(
-                    Expense(
-                        amount = binding.amount.editText!!.text.toString().toDouble(),
-                        description = binding.description.editText!!.text.toString(),
+            if (!binding.amount.editText!!.text.toString().isNullOrBlank()
+                && !binding.description.editText!!.text.toString().isNullOrBlank()
+            ) {
+                if (expenseId.isNullOrEmpty() || expense == null) {
+                    vm.addExpense(
+                        Expense(
+                            amount = binding.amount.editText!!.text.toString().toDouble(),
+                            description = binding.description.editText!!.text.toString(),
+                        )
                     )
-                )
-            } else {
-                vm.updateExpense(
-                    expense.copy(
-                        amount = binding.amount.editText!!.text.toString().toDouble(),
-                        description = binding.description.editText!!.text.toString(),
+                } else {
+                    vm.updateExpense(
+                        expense.copy(
+                            amount = binding.amount.editText!!.text.toString().toDouble(),
+                            description = binding.description.editText!!.text.toString(),
+                        )
                     )
-                )
+                }
+                findNavController().navigateUp()
             }
-            findNavController().navigateUp()
         }
     }
 
